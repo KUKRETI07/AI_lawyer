@@ -14,8 +14,8 @@ import requests
 from sentence_transformers import SentenceTransformer, CrossEncoder
 
 # ---------- CONFIG ----------
-FAISS_INDEX_PATH = os.environ.get("FAISS_INDEX_PATH", "/content/faiss_index1.bin")
-METADATA_PATH = os.environ.get("METADATA_PATH", "/content/faiss_metadata1 (1).json")
+FAISS_INDEX_PATH = os.environ.get("FAISS_INDEX_PATH", "faiss_index1.bin")
+METADATA_PATH = os.environ.get("METADATA_PATH", "faiss_metadata1.json")
 EMBED_MODEL_NAME = os.environ.get("EMBED_MODEL_NAME", "all-mpnet-base-v2")
 RERANKER_MODEL = os.environ.get("RERANKER_MODEL", "cross-encoder/ms-marco-MiniLM-L-6-v2")
 
