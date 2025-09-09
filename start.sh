@@ -37,3 +37,5 @@ export MEM_DB=${MEM_DB}
 
 # Start gunicorn (Render sets $PORT automatically)
 exec gunicorn app:app --bind 0.0.0.0:$PORT --workers 1 --threads 4 --timeout 120
+
+chmod +x start.sh
