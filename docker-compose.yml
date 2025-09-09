@@ -1,0 +1,20 @@
+version: "3.8"
+services:
+  lawyer-ai:
+    build: .
+    image: lawyer-ai:local
+    ports:
+      - "8000:8000"
+    environment:
+      - MISTRAL_API_KEY=${MISTRAL_API_KEY}
+      - FAISS_INDEX_PATH=/app/data/faiss_index1.bin
+      - METADATA_PATH=/app/data/faiss_metadata1.json
+      - MEM_DB=/app/data/memory.db
+      - PORT=8000
+    volumes:
+      - ./data:/app/data   # put your faiss index + metadata in ./data locally
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
