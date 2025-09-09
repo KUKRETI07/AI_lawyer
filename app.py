@@ -21,8 +21,8 @@ RERANKER_MODEL = os.environ.get("RERANKER_MODEL", "cross-encoder/ms-marco-MiniLM
 
 
 # Mistral config (set env vars or edit below)
-MISTRAL_API_KEY = os.environ.get("MISTRAL_API_KEY", "WY7aNsxuO96YRQlhzN5zwkzbEWQWzY33")
-MISTRAL_MODEL_NAME = os.environ.get("MISTRAL_MODEL_NAME", "mistral-medium-2505")
+MISTRAL_API_KEY = os.environ.get("MISTRAL_API_KEY")
+MISTRAL_MODEL_NAME = os.environ.get("MISTRAL_MODEL_NAME", "mistral-medium-2505") 
 MISTRAL_API_URL = "https://api.mistral.ai/v1/chat/completions"
 MISTRAL_HEADERS = {"Authorization": f"Bearer {MISTRAL_API_KEY}", "Content-Type": "application/json"}
 
