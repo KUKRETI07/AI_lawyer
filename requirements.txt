@@ -8,5 +8,5 @@ sentence-transformers==2.2.2
 torch==2.5.1
 transformers==4.34.0
 faiss-cpu==1.11.0
-numpy==2.1.2
+numpy==1.26.4
 huggingface_hub==0.19.4
