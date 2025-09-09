@@ -1,0 +1,7 @@
+flask==2.3.2
+gunicorn==21.2.0
+requests==2.31.0
+sentence-transformers==2.2.2
+cross-encoder==0.4.4
+faiss-cpu
+numpy
