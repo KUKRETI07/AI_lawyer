@@ -4,3 +4,5 @@ requests==2.31.0
 sentence-transformers==2.2.2
 faiss-cpu
 numpy
+huggingface_hub==0.19.4
+
