@@ -2,9 +2,8 @@ flask==2.3.2
 gunicorn==21.2.0
 requests==2.31.0
 sentence-transformers==2.2.2
-torch==2.5.1
+torch==2.8.0
 transformers==4.34.0
-faiss-cpu==1.7.4
+faiss-cpu==1.11.0
 numpy==1.26.0
 huggingface_hub==0.19.4
-
