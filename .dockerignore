@@ -1,0 +1,16 @@
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+.env
+.env.* 
+.git
+.gitignore
+.vscode
+venv
+build
+dist
+__pycache__
+node_modules
+*.egg-info
