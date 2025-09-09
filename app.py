@@ -32,7 +32,7 @@ VERIFIER_TOPK = 3
 SUPPORT_THRESHOLD = float(os.environ.get("SUPPORT_THRESHOLD", 0.60))
 
 # Memory DB path
-MEM_DB = os.environ.get("MEM_DB", "memory.db")
+MEM_DB = os.environ.get("MEM_DB", "/tmp/memory.db")
 MEMORY_WINDOW = int(os.environ.get("MEMORY_WINDOW", 3))  # how many recent Q/A to include
 
 # ---------- APP ----------
